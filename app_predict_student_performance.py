@@ -97,11 +97,11 @@ def main():
     if st.button("Predict"):
         
         #Convert user choices from selectbox to numeric values
-        sex =   sex_options.index( sex)
+        sex =   sex_options.index(sex)
         
-        Fedu = Fedu_options.index(Fedu)
+        fedu = fedu_options.index(fedu)
         
-        Mjob = Mjob_options.index(Mjob)
+        mjob = mjob_options.index(mjob)
         
         reason =  reason_options.index(reason)
         
