@@ -16,13 +16,13 @@ RFR = pickle.load(pickle_in)
 #Define a function to predict student performance
 
 def predict_studentPerformance(g2, absences, age, famrel, health,
-                               mjob, reason, g1, studytime, Fedu,
+                               mjob, reason, g1, studytime, fedu,
                                schoolsup, activities, failures,
                                romantic, sex, nursery, internet):
     
     
     prediction=RFR.predict([[g2, absences, age, famrel, health,
-                               mjob, reason, g1, studytime, Fedu,
+                               mjob, reason, g1, studytime, fedu,
                                schoolsup, activities, failures,
                                romantic, sex, nursery, internet]]) 
     #print (prediction)
@@ -126,8 +126,8 @@ def main():
 
     
         #Call function and assign to variable result
-        result = predict_studentPerformance(G2, absences, age, famrel, health,
-                                            Mjob, reason, G1, studytime, Fedu,
+        result = predict_studentPerformance(g2, absences, age, famrel, health,
+                                            mjob, reason, g1, studytime, fedu,
                                             schoolsup, activities, failures,
                                             romantic, sex, nursery, internet)
     
