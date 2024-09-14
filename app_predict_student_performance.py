@@ -53,7 +53,7 @@ def main():
     fedu = st.selectbox("Father's Education:", fedu_options, index=fedu_options.index("none"))
     
     mjob_options = ["teacher", "health", "services", "at_home", "other"]
-    mjob = st.selectbox("Mother's job", mjob_options, index=Mjob_options.index("at_home"))
+    mjob = st.selectbox("Mother's job", mjob_options, index=mjob_options.index("at_home"))
     
     reason_options = ['home', 'reputation', 'course' , 'other']
     reason = st.selectbox("Reason To Choose This School", reason_options, index=reason_options.index("home"))
