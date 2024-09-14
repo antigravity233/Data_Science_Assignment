@@ -13,7 +13,7 @@ import streamlit as st
 pickle_in = open("RFR.pkl","rb")
 RFR = pickle.load(pickle_in)
 
-#Define a function to predict diamond prices
+#Define a function to predict student performance
 
 def predict_studentPerformance(G2, absences, age, famrel, health,
                                Mjob, reason, G1, studytime, Fedu,
