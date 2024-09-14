@@ -50,7 +50,7 @@ def main():
                    "5th to 9th grade",
                    "secondary education",
                    "higner education"]
-    edu = st.selectbox("Father's Education:", fedu_options, index=edu_options.index("none"))
+    fedu = st.selectbox("Father's Education:", fedu_options, index=fedu_options.index("none"))
     
     mjob_options = ["teacher", "health", "services", "at_home", "other"]
     mjob = st.selectbox("Mother's job", mjob_options, index=Mjob_options.index("at_home"))
