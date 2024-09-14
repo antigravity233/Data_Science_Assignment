@@ -58,8 +58,7 @@ def main():
     reason_options = ['home', 'reputation', 'course' , 'other']
     reason = st.selectbox("Reason To Choose This School", reason_options, index=reason_options.index("home"))
     
-    studytime_options = ["<2 hours", "2 to 5 hours"," 5 to 10 hours", ">10 hours"]
-    studytime = st.selectbox("Weekly Study Time", studytime_options, index=studytime_options.index("<2 hours"))
+    studytime = st.number_input("Weekly Study Time", min_value=1, max_value=4, value=1, step=1)
     
     failures = st.number_input("Number Of Past Class Failures", min_value=1, max_value=4, value=1, step=1)
     
@@ -77,12 +76,10 @@ def main():
 
     romantic_options = ['yes', 'no']
     romantic = st.selectbox("Been With A Romantic Relationship", romantic_options, index=romantic_options.index("yes"))
-      
-    famrel_options = ['very bad', 'bad', 'normal', 'good', 'excellent']
-    famrel = st.selectbox("Family Relationship", famrel_options, index=famrel_options.index("normal"))
     
-    health_options = ['very bad', 'bad', 'normal', 'good', 'very good']
-    health = st.selectbox("Current Health Status", health_options, index=health_options.index("normal"))
+  famrel = st.number_input("Family Relationship", min_value=1, max_value=5, value=1, step=1)
+    
+    health = st.number_input("Current Health Level", min_value=1, max_value=5, value=1, step=1)
                           
     absences = st.number_input("Number Of School Absences", min_value=0, max_value=93, value=0, step=1)
 
@@ -106,7 +103,6 @@ def main():
         reason =  reason_options.index(reason)
         
         studytime = studytime_options.index(studytime)
-        studytime = studytime+1
         
         schoolsup = schoolsup_options.index(schoolsup)
         
@@ -117,12 +113,6 @@ def main():
         internet = internet_options.index(internet)
         
         romantic = romantic_options.index(romantic)
-        
-        famrel =  famrel_options.index(famrel)
-        famrel = famrel+1
-        
-        health = health_options.index(health)
-        health = health+1
 
     
         #Call function and assign to variable result
