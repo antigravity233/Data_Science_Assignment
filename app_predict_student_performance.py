@@ -96,9 +96,9 @@ def main():
         #Convert user choices from selectbox to numeric values
         sex =   sex_options.index(sex)
         
-        Fedu = Fedu_options.index(fedu)
+        Fedu = Fedu_options.index(Fedu)
         
-        Mjob = Mjob_options.index(mjob)
+        Mjob = Mjob_options.index(Mjob)
         
         reason =  reason_options.index(reason)
         
