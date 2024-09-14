@@ -15,7 +15,7 @@ RFR = pickle.load(pickle_in)
 
 #Define a function to predict student performance
 
-def predict_studentPerformance(F2, absences, age, famrel, health,
+def predict_studentPerformance(G2, absences, age, famrel, health,
                                Mjob, reason, G1, studytime, Fedu,
                                schoolsup, activities, failures,
                                romantic, sex, nursery, internet):
