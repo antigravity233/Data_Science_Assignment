@@ -77,7 +77,7 @@ def main():
     romantic_options = ['yes', 'no']
     romantic = st.selectbox("Been With A Romantic Relationship", romantic_options, index=romantic_options.index("yes"))
     
-  famrel = st.number_input("Family Relationship", min_value=1, max_value=5, value=1, step=1)
+    famrel = st.number_input("Family Relationship", min_value=1, max_value=5, value=1, step=1)
     
     health = st.number_input("Current Health Level", min_value=1, max_value=5, value=1, step=1)
                           
