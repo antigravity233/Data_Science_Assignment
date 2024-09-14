@@ -102,8 +102,6 @@ def main():
         
         reason =  reason_options.index(reason)
         
-        studytime = studytime_options.index(studytime)
-        
         schoolsup = schoolsup_options.index(schoolsup)
         
         activities =  activities_options.index(activities)
